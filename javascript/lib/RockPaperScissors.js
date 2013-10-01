@@ -53,11 +53,7 @@ Game.prototype.winner = function(){
 }
 
 Game.prototype.samePick = function(){
-	if (this.player1.pick == this.player2.pick) {
-		return true;
-	} else {
-		return false;
-	}
+	return this.player1.pick == this.player2.pick ? true : false 
 }
 
 Game.prototype.showWinner = function() {
@@ -68,7 +64,7 @@ Game.prototype.showWinner = function() {
 		rocklizard : 'crushes',
 		lizardspock : 'poisons',
 		spockscissors : 'smashes',
-		scissorslizard : 'decapitates',
+		scissorslizard : 'decapitate',
 		lizardpaper : 'eats',
 		paperspock : 'disproves',
 		spockrock : 'vaporizes',
