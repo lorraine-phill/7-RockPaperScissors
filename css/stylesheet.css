@@ -5,16 +5,19 @@ body	{
 		background-color:#cccccc;
 		} 
 
-p {
-	text-align: center;
-    font-family: serif;
-    color: #452aff;
+p, #choice 	{
+		text-align: center;
+		font-family: "Helvetica Neue",helvetica,sans-serif;
+	    font-size: 13px;    
+	    color: #452aff;
+		}
 
-	}
-
-#navlist img {
-	margin: 0 20px;
-}
+div#result {
+		text-align: center;
+		font-family: "Helvetica Neue", helvetica, sans-serif;
+    	font-size: 22px;    
+    	color: #452aff;
+		}
 
 div#one {
 		padding:5px;
@@ -31,13 +34,15 @@ div#two {
 		 background-color:white;
 		 margin:5px;
 		 }
-
 img.centerit  {
 			display: block;
     		margin-left: auto;
     		margin-right: auto 
 			}
 /* http://css.maxdesign.com.au/floatutorial */			
+#navlist img {
+			margin: 0 20px;
+			}
 ul#navlist	{
 			padding: 0;
 			margin: 0;
@@ -63,4 +68,6 @@ ul#navlist li a {
 			border-right: 1px solid #fff;
 			text-align: center;
 			}
+
+
 

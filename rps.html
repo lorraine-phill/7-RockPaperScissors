@@ -28,8 +28,11 @@
     </ul>
     <div id="one">
       <div id="two">
-          <div id=""><img class="centerit" src="./Images/player1.png"/>
-            <p class="centerit" > Click an icon above</p>
+          <div id="three">
+            <div class='instructions'>
+                <img class="centerit" src="./Images/player1.png"/>
+                <p class="centerit">Please select an icon above</p>
+            </div>
             <div id="choice"> </div>
             <div id="result"> </div>
 
@@ -56,6 +59,7 @@
             player1.picks($(this).data('name'));
             player2.picks('rock');
             $('#result').html(game.showWinner());
+            $('.instructions').hide();
         });
     });
     
