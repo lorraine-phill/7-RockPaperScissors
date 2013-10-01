@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+body	{	
+		background-image:url('../Images/Back.png');
+		background-color:#cccccc;
+		} 
+
+p {
+	text-align: center;
+    font-family: serif;
+    color: #452aff;
+
+	}
+
+#navlist img {
+	margin: 0 20px;
+}
+
+div#one {
+		padding:5px;
+		border-style:dotted;
+		border-color:#452aff;
+		border-width:3px;
+		margin:5px 180px;
+		}
+
+div#two {
+		 border-style:solid;
+		 border-color:#452aff;
+		 border-width:120px;
+		 background-color:white;
+		 margin:5px;
+		 }
+
+img.centerit  {
+			display: block;
+    		margin-left: auto;
+    		margin-right: auto 
+			}
+/* http://css.maxdesign.com.au/floatutorial */			
+ul#navlist	{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			float: left;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+			}
+			
+ul#navlist li { 
+			display: inline;
+			text-align: center;
+			}
+			
+ul#navlist li a {
+			float: left;
+			width: 5em;
+			color: #fff;
+			background-color: #036;
+			padding: 0.2em 1em;
+			text-decoration: none;
+			border-right: 1px solid #fff;
+			text-align: center;
+			}
+

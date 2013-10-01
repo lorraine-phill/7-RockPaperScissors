@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Rock, Paper, Scissors, Lizard, Spock: The Game</title>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+		form {
+  			width: 100px ;
+  			margin: 0 auto;
+			}
+	</style>
+</head>
+
+<body>
+    <p></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <ul id="navlist">
+                <li><img src="./Images/Rock.png" alt="Rock" width="120" height="120" data-name='rock'/></li>
+                <li><img src="./Images/Paper.png" alt="Paper" width="120" height="120" data-name='paper'/></li>
+				<li><img src="./Images/Scissors.png" alt="Scissors" width="120" height="120" data-name='scissors'/></li>
+				<li><img src="./Images/Lizard.png" alt="Lizard" width="120" height="120" data-name='lizard'/></li>
+                <li><img src="./Images/Spock.png" alt="Spock" width="120" height="120" data-name='spock'/></li>
+    </ul>
+    <div id="one">
+      <div id="two">
+          <div id=""><img class="centerit" src="./Images/player1.png"/>
+            <p class="centerit" > Click an icon above</p>
+            <div id="choice"> </div>
+            <div id="result"> </div>
+
+        </div>
+    </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src='lib/RockPaperScissors.js'></script>
+<script>
+    // $(document).ready(function(){
+    //     $('#navlist img').click(function(){
+    //         alert('You chose ' + $(this).data('name'));
+    //     });
+    // });
+    
+    $(document).ready(function(){
+
+        var player1 = new Player();
+        var player2 = new Player();
+        var game = new Game(player1,player2);
+
+        $('#navlist img').click(function(){
+            $('#choice').html('Player 1 chose ' + $(this).data('name'));
+            player1.picks($(this).data('name'));
+            player2.picks('rock');
+            $('#result').html(game.showWinner());
+        });
+    });
+    
+
+</script>
+</body>
+</html>
