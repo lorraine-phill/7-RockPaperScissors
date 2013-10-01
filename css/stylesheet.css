@@ -5,7 +5,7 @@ body	{
 		background-color:#cccccc;
 		} 
 
-p, #choice 	{
+p, #computerChoice, #player1Choice 	{
 		text-align: center;
 		font-family: "Helvetica Neue",helvetica,sans-serif;
 	    font-size: 13px;    
@@ -15,8 +15,9 @@ p, #choice 	{
 div#result {
 		text-align: center;
 		font-family: "Helvetica Neue", helvetica, sans-serif;
-    	font-size: 22px;    
-    	color: #452aff;
+  	font-size: 22px;    
+  	color: #452aff;
+    text-transform: capitalize;
 		}
 
 div#one {
@@ -24,6 +25,7 @@ div#one {
 		border-style:dotted;
 		border-color:#452aff;
 		border-width:3px;
+		border-radius: 8px;
 		margin:5px 180px;
 		}
 
@@ -31,14 +33,17 @@ div#two {
 		 border-style:solid;
 		 border-color:#452aff;
 		 border-width:120px;
+		 border-radius: 8px;
 		 background-color:white;
 		 margin:5px;
 		 }
+
 img.centerit  {
-			display: block;
-    		margin-left: auto;
-    		margin-right: auto 
-			}
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		}
+
 /* http://css.maxdesign.com.au/floatutorial */			
 #navlist img {
 			margin: 0 20px;
