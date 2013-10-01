@@ -33,7 +33,8 @@
                 <img class="centerit" src="./Images/player1.png"/>
                 <p class="centerit">Please select an icon above</p>
             </div>
-            <div id="choice"> </div>
+            <div id="player1Choice"> </div>
+            <div id="computerChoice"> </div>
             <div id="result"> </div>
 
         </div>
@@ -52,12 +53,14 @@
 
         var player1 = new Player();
         var player2 = new Player();
-        var game = new Game(player1,player2);
+        var game = new Game(player1,player2);      
 
         $('#navlist img').click(function(){
-            $('#choice').html('Player 1 chose ' + $(this).data('name'));
             player1.picks($(this).data('name'));
-            player2.picks('rock');
+            player2.pick = player2.randomPick();
+            $('#player1Choice').html('Player 1 chose ' + $(this).data('name'));
+            
+            $('#computerChoice').html('The computer chose ' + player2.pick);
             $('#result').html(game.showWinner());
             $('.instructions').hide();
         });
