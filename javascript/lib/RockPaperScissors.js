@@ -7,11 +7,18 @@ Player.prototype.picks = function(pick){
    this.pick = pick;
 }
 
+Player.prototype.randomPick = function(){
+	var randomNumber = Math.floor(Math.random( ) * 5);
+	var options = ['rock', 'paper','scissors','lizard','spock'];
+	return options[randomNumber];
+}
+
 // Initialize players. 'this' is the equivalent of the @ symbol//
 function Game(player1, player2){
 	this.player1 = player1;
 	this.player2 = player2;
 }
+
 
 Game.prototype.winner = function(){
 	var pairs = {
@@ -35,7 +42,7 @@ Game.prototype.winner = function(){
 			beats :'rock',
 			beats1 : 'scissors'
 		}
-	}
+	};
 
 	if (this.samePick() == true) {
 		return null;
