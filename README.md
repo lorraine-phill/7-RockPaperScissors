@@ -15,7 +15,7 @@ Created program Rock, Paper, Scissors, Lizard, Spock as a way to learn the funda
 
 <h4>Team</h4>
 <ul>
-<li><a href="https://github.com/ecomba">Lorraine Phillips</a>
+<li><a href="https://github.com/margOnline">Margo Urey</a>
 </li>
 </ul>
 <h4>Next Steps</h4>
