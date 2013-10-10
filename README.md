@@ -1,6 +1,7 @@
 This application is written in Ruby 2.0 and Javascript
 <h4>Objective</h4>
-Build a Rock Scissors Paper Spock Lizard game using javascript.
+Created program Rock, Paper, Scissors, Lizard, Spock as a way to learn the fundamentals of JavaScript (JS) by translating the basics of a Ruby program into JS. Additional functionality of Lizard and Spock was added for extra bonus. 
+<p>The program was created using JS behaviour driven development tool Jasmine.</p>
 <h4>Requirements</h4>
 <ul>
   <li>User can play against the computer</li>
@@ -20,3 +21,7 @@ Build a Rock Scissors Paper Spock Lizard game using javascript.
 <h4>Next Steps</h4>
 
 <h4>Updates
+
+
+
+

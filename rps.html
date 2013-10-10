@@ -13,19 +13,17 @@
 </head>
 
 <body>
-    <p></p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
+    <div id="top">
     <ul id="navlist">
-                <li><img src="./Images/Rock.png" alt="Rock" width="120" height="120" data-name='rock'/></li>
-                <li><img src="./Images/Paper.png" alt="Paper" width="120" height="120" data-name='paper'/></li>
-				<li><img src="./Images/Scissors.png" alt="Scissors" width="120" height="120" data-name='scissors'/></li>
-				<li><img src="./Images/Lizard.png" alt="Lizard" width="120" height="120" data-name='lizard'/></li>
-                <li><img src="./Images/Spock.png" alt="Spock" width="120" height="120" data-name='spock'/></li>
+        <li><img class="animate" src="./Images/Rock.png" alt="Rock" width="110" height="110" data-name='rock'/></li>
+        <li><img class="animate" src="./Images/Paper.png" alt="Paper" width="110" height="110" data-name='paper'/></li>
+		<li><img class="animate" src="./Images/Scissors.png" alt="Scissors" width="110" height="110" data-name='scissors'/></li>
+		<li><img class="animate" src="./Images/Lizard.png" alt="Lizard" width="110" height="110" data-name='lizard'/></li>
+        <li><img class="animate" src="./Images/Spock.png" alt="Spock" width="110" height="110" data-name='spock'/></li>
     </ul>
+</div>
+
+
     <div id="one">
       <div id="two">
           <div id="three">
@@ -62,10 +60,10 @@
             
             $('#computerChoice').html('The computer chose ' + player2.pick);
             $('#result').html(game.showWinner());
+            $('#result').show();
             $('.instructions').hide();
         });
     });
-    
 
 </script>
 </body>
