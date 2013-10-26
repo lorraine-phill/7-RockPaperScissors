@@ -15,8 +15,6 @@ Created program Rock, Paper, Scissors, Lizard, Spock as a way to learn the funda
 <li>The computer's choice will be selected randomly</li>
 <li>A descriptive message will display who won</li> 
 </ul>
-<h4>Technical Configuration</h4>
-
 <h4>Team</h4>
 <ul>
 <li><a href="https://github.com/margOnline">Margo Urey</a>
