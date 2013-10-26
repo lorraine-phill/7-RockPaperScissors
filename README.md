@@ -1,7 +1,7 @@
 
 ![alt text](https://s3.amazonaws.com/Github-14/RPSLS.png "Rock, Paper, Scissors, Lizard, Spock")
 
-<p>Thia app was created using the following:<br>
+<p>Thia app was created with the following:<br>
 	Languages: Ruby 2.0, JavaScript, HTML and CSS.<br>
 	Testing tool: Jasmine.</p>
 
